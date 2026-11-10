@@ -1,0 +1,46 @@
+
+# Compilação
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de configuração local
+*.cache
+*.log
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Arquivos temporários
+[Tt]emp/
+[Tt]mp/
+*.tmp
+*.bak
+
+# Publicação
+publish/
+artifacts/
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
