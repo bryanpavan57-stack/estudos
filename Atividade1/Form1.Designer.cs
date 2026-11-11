@@ -44,7 +44,7 @@
             // 
             // tbNome
             // 
-            this.tbNome.Location = new Point(47, 62);
+            this.tbNome.Location = new Point(47, 82);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new Size(133, 23);
             this.tbNome.TabIndex = 0;
@@ -66,39 +66,39 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(93, 44);
+            label1.Location = new Point(93, 64);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(40, 15);
             label1.TabIndex = 6;
-            label1.Text = "label1";
+            label1.Text = "Nome";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(93, 108);
+            label2.Location = new Point(93, 117);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(37, 15);
             label2.TabIndex = 7;
-            label2.Text = "label2";
+            label2.Text = "Preco";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(93, 177);
+            label3.Location = new Point(82, 177);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(69, 15);
             label3.TabIndex = 9;
-            label3.Text = "label3";
+            label3.Text = "Quantidade";
             label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(93, 241);
+            label4.Location = new Point(82, 241);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(58, 15);
             label4.TabIndex = 11;
-            label4.Text = "label4";
+            label4.Text = "Categoria";
             // 
             // btCadastrar
             // 
@@ -128,7 +128,7 @@
             // 
             // tbPreco
             // 
-            tbPreco.Location = new Point(47, 137);
+            tbPreco.Location = new Point(47, 135);
             tbPreco.Name = "tbPreco";
             tbPreco.Size = new Size(133, 23);
             tbPreco.TabIndex = 15;
