@@ -35,8 +35,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btCadastrar = new Button();
+            btLimpar = new Button();
             dataGridView1 = new DataGridView();
             tbPreco = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -100,23 +100,23 @@
             label4.TabIndex = 11;
             label4.Text = "label4";
             // 
-            // button1
+            // btCadastrar
             // 
-            button1.Location = new Point(298, 303);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 12;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btCadastrar.Location = new Point(298, 303);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(75, 23);
+            btCadastrar.TabIndex = 12;
+            btCadastrar.Text = "button1";
+            btCadastrar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btLimpar
             // 
-            button2.Location = new Point(449, 303);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 13;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btLimpar.Location = new Point(449, 303);
+            btLimpar.Name = "btLimpar";
+            btLimpar.Size = new Size(75, 23);
+            btLimpar.TabIndex = 13;
+            btLimpar.Text = "button2";
+            btLimpar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -140,8 +140,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(tbPreco);
             Controls.Add(dataGridView1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btLimpar);
+            Controls.Add(btCadastrar);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -166,8 +166,8 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Button button1;
-        private Button button2;
+        private Button btCadastrar;
+        private Button btLimpar;
         private DataGridView dataGridView1;
         private TextBox tbPreco;
     }
