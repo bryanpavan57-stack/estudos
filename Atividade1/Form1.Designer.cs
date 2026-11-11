@@ -30,7 +30,7 @@
         {
             this.tbNome = new TextBox();
             textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            tbQuantidade = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -38,6 +38,7 @@
             button1 = new Button();
             button2 = new Button();
             dataGridView1 = new DataGridView();
+            tbPreco = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -55,12 +56,12 @@
             textBox3.Size = new Size(133, 23);
             textBox3.TabIndex = 3;
             // 
-            // textBox4
+            // tbQuantidade
             // 
-            textBox4.Location = new Point(47, 195);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(133, 23);
-            textBox4.TabIndex = 5;
+            tbQuantidade.Location = new Point(47, 195);
+            tbQuantidade.Name = "tbQuantidade";
+            tbQuantidade.Size = new Size(133, 23);
+            tbQuantidade.TabIndex = 5;
             // 
             // label1
             // 
@@ -125,11 +126,19 @@
             dataGridView1.Size = new Size(389, 253);
             dataGridView1.TabIndex = 14;
             // 
+            // tbPreco
+            // 
+            tbPreco.Location = new Point(47, 137);
+            tbPreco.Name = "tbPreco";
+            tbPreco.Size = new Size(133, 23);
+            tbPreco.TabIndex = 15;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tbPreco);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -137,7 +146,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox4);
+            Controls.Add(tbQuantidade);
             Controls.Add(textBox3);
             Controls.Add(this.tbNome);
             Name = "Form1";
@@ -152,7 +161,7 @@
         private TextBox textBox1;
         private TextBox tbPreco1995;
         private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox tbQuantidade;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -160,5 +169,6 @@
         private Button button1;
         private Button button2;
         private DataGridView dataGridView1;
+        private TextBox tbPreco;
     }
 }
