@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tbNome = new TextBox();
-            textBox3 = new TextBox();
+            tbCategoria = new TextBox();
             tbQuantidade = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -49,12 +49,12 @@
             this.tbNome.Size = new Size(133, 23);
             this.tbNome.TabIndex = 0;
             // 
-            // textBox3
+            // tbCategoria
             // 
-            textBox3.Location = new Point(47, 259);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(133, 23);
-            textBox3.TabIndex = 3;
+            tbCategoria.Location = new Point(47, 259);
+            tbCategoria.Name = "tbCategoria";
+            tbCategoria.Size = new Size(133, 23);
+            tbCategoria.TabIndex = 3;
             // 
             // tbQuantidade
             // 
@@ -147,7 +147,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(tbQuantidade);
-            Controls.Add(textBox3);
+            Controls.Add(tbCategoria);
             Controls.Add(this.tbNome);
             Name = "Form1";
             Text = "Form1";
@@ -160,7 +160,7 @@
 
         private TextBox textBox1;
         private TextBox tbPreco1995;
-        private TextBox textBox3;
+        private TextBox tbCategoria;
         private TextBox tbQuantidade;
         private Label label1;
         private Label label2;
