@@ -28,7 +28,25 @@ namespace Atividade1
         private void btLimpar_Click(object sender, EventArgs e)
         {
             produtos.Clear();
-           
+
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                object pessoa = new
+                {
+                    Nome = tbNome.Text,
+                    Preco = tbPreco.Text,
+                    Quantidade = tbQuantidade.Text,
+                    Categoria = tbCategoria.Text,
+                };
+                produtos.Add(pessoa);
+                dgLista.DataSource = null;
+                dgLista.DataSource = produtos;
+            }
+                   
         }
     }
 }

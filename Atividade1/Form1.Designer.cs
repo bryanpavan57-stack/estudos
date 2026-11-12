@@ -163,6 +163,7 @@
             Controls.Add(tbNome);
             Name = "Form1";
             Text = "Form1";
+            KeyPress += Form1_KeyPress;
             ((System.ComponentModel.ISupportInitialize)dgLista).EndInit();
             ResumeLayout(false);
             PerformLayout();
