@@ -40,7 +40,12 @@
             btLimpar = new Button();
             dgLista = new DataGridView();
             label2 = new Label();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
             ((System.ComponentModel.ISupportInitialize)dgLista).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             SuspendLayout();
             // 
             // tbNome
@@ -109,7 +114,7 @@
             // 
             // btCadastrar
             // 
-            btCadastrar.Location = new Point(317, 296);
+            btCadastrar.Location = new Point(272, 296);
             btCadastrar.Name = "btCadastrar";
             btCadastrar.Size = new Size(75, 23);
             btCadastrar.TabIndex = 9;
@@ -119,7 +124,7 @@
             // 
             // btLimpar
             // 
-            btLimpar.Location = new Point(441, 296);
+            btLimpar.Location = new Point(381, 296);
             btLimpar.Name = "btLimpar";
             btLimpar.Size = new Size(75, 23);
             btLimpar.TabIndex = 10;
@@ -130,27 +135,59 @@
             // dgLista
             // 
             dgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgLista.Location = new Point(230, 43);
+            dgLista.Location = new Point(-4, 0);
             dgLista.Name = "dgLista";
-            dgLista.Size = new Size(376, 232);
+            dgLista.Size = new Size(370, 219);
             dgLista.TabIndex = 11;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(381, 25);
+            label2.Location = new Point(333, 25);
             label2.Name = "label2";
             label2.Size = new Size(75, 15);
             label2.TabIndex = 12;
             label2.Text = "Lista de Itens";
+            label2.Click += label2_Click;
+            // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(201, 43);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(374, 247);
+            tabControl1.TabIndex = 13;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(dgLista);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(366, 219);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(366, 219);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tabControl1);
             Controls.Add(label2);
-            Controls.Add(dgLista);
             Controls.Add(btLimpar);
             Controls.Add(btCadastrar);
             Controls.Add(label5);
@@ -165,6 +202,8 @@
             Text = "Form1";
             KeyPress += Form1_KeyPress;
             ((System.ComponentModel.ISupportInitialize)dgLista).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,5 +222,8 @@
         private Button btLimpar;
         private DataGridView dgLista;
         private Label label2;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
     }
 }
