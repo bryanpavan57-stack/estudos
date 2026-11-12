@@ -7,6 +7,7 @@ namespace Atividade1
         public Form1()
         {
             InitializeComponent();
+            this.KeyPreview = true;
 
         }
         List<object> produtos = new List<object>();
