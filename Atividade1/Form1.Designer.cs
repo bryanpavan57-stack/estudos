@@ -36,10 +36,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            bt = new Button();
-            button2 = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btCadastrar = new Button();
+            btLimpar = new Button();
+            dgLista = new DataGridView();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgLista).BeginInit();
             SuspendLayout();
             // 
             // tbNome
@@ -106,40 +107,52 @@
             label5.TabIndex = 8;
             label5.Text = "Quantidade";
             // 
-            // bt
+            // btCadastrar
             // 
-            bt.Location = new Point(317, 296);
-            bt.Name = "bt";
-            bt.Size = new Size(75, 23);
-            bt.TabIndex = 9;
-            bt.Text = "button1";
-            bt.UseVisualStyleBackColor = true;
+            btCadastrar.Location = new Point(317, 296);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(75, 23);
+            btCadastrar.TabIndex = 9;
+            btCadastrar.Text = "Cadastar";
+            btCadastrar.UseVisualStyleBackColor = true;
+            btCadastrar.Click += btCadastrar_Click;
             // 
-            // button2
+            // btLimpar
             // 
-            button2.Location = new Point(441, 296);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 10;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btLimpar.Location = new Point(441, 296);
+            btLimpar.Name = "btLimpar";
+            btLimpar.Size = new Size(75, 23);
+            btLimpar.TabIndex = 10;
+            btLimpar.Text = "Limpar";
+            btLimpar.UseVisualStyleBackColor = true;
+            btLimpar.Click += btLimpar_Click;
             // 
-            // dataGridView1
+            // dgLista
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(230, 43);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(376, 232);
-            dataGridView1.TabIndex = 11;
+            dgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgLista.Location = new Point(230, 43);
+            dgLista.Name = "dgLista";
+            dgLista.Size = new Size(376, 232);
+            dgLista.TabIndex = 11;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(381, 25);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 15);
+            label2.TabIndex = 12;
+            label2.Text = "Lista de Itens";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
-            Controls.Add(button2);
-            Controls.Add(bt);
+            Controls.Add(label2);
+            Controls.Add(dgLista);
+            Controls.Add(btLimpar);
+            Controls.Add(btCadastrar);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -150,7 +163,7 @@
             Controls.Add(tbNome);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgLista).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,8 +178,9 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button bt;
-        private Button button2;
-        private DataGridView dataGridView1;
+        private Button btCadastrar;
+        private Button btLimpar;
+        private DataGridView dgLista;
+        private Label label2;
     }
 }
