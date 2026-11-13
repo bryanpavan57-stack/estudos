@@ -92,7 +92,7 @@
             label3.Name = "label3";
             label3.Size = new Size(37, 15);
             label3.TabIndex = 6;
-            label3.Text = "Preco";
+            label3.Text = "Preço";
             // 
             // label4
             // 
@@ -139,7 +139,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(579, 303);
+            tabPage1.Size = new Size(627, 303);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Produtos";
             tabPage1.UseVisualStyleBackColor = true;
@@ -150,16 +150,16 @@
             label2.AutoSize = true;
             label2.Location = new Point(232, 10);
             label2.Name = "label2";
-            label2.Size = new Size(75, 15);
+            label2.Size = new Size(123, 15);
             label2.TabIndex = 16;
-            label2.Text = "Lista de Itens";
+            label2.Text = "Produtos Cadastrados";
             // 
             // dgLista
             // 
             dgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgLista.Location = new Point(232, 28);
             dgLista.Name = "dgLista";
-            dgLista.Size = new Size(327, 218);
+            dgLista.Size = new Size(376, 247);
             dgLista.TabIndex = 15;
             // 
             // btLimpar
@@ -179,6 +179,7 @@
             btCadastrar.TabIndex = 13;
             btCadastrar.Text = "Cadastar";
             btCadastrar.UseVisualStyleBackColor = true;
+            btCadastrar.Click += btCadastrar_Click_1;
             // 
             // tabControl1
             // 
@@ -187,7 +188,7 @@
             tabControl1.Location = new Point(54, 12);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(587, 331);
+            tabControl1.Size = new Size(635, 331);
             tabControl1.TabIndex = 13;
             // 
             // Form1
