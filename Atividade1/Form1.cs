@@ -47,7 +47,17 @@ namespace Atividade1
                 dgLista.DataSource = null;
                 dgLista.DataSource = produtos;
             }
-                   
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
