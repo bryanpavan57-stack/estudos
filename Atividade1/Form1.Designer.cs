@@ -50,74 +50,79 @@
             // 
             // tbNome
             // 
-            tbNome.Location = new Point(99, 55);
+            tbNome.Location = new Point(113, 73);
+            tbNome.Margin = new Padding(3, 4, 3, 4);
             tbNome.Name = "tbNome";
-            tbNome.Size = new Size(118, 23);
+            tbNome.Size = new Size(134, 27);
             tbNome.TabIndex = 0;
             // 
             // tbCategoria
             // 
-            tbCategoria.Location = new Point(99, 213);
+            tbCategoria.Location = new Point(113, 284);
+            tbCategoria.Margin = new Padding(3, 4, 3, 4);
             tbCategoria.Name = "tbCategoria";
-            tbCategoria.Size = new Size(118, 23);
+            tbCategoria.Size = new Size(134, 27);
             tbCategoria.TabIndex = 1;
             // 
             // tbQuantidade
             // 
-            tbQuantidade.Location = new Point(99, 163);
+            tbQuantidade.Location = new Point(113, 217);
+            tbQuantidade.Margin = new Padding(3, 4, 3, 4);
             tbQuantidade.Name = "tbQuantidade";
-            tbQuantidade.Size = new Size(118, 23);
+            tbQuantidade.Size = new Size(134, 27);
             tbQuantidade.TabIndex = 2;
             // 
             // tbPreco
             // 
-            tbPreco.Location = new Point(99, 108);
+            tbPreco.Location = new Point(113, 144);
+            tbPreco.Margin = new Padding(3, 4, 3, 4);
             tbPreco.Name = "tbPreco";
-            tbPreco.Size = new Size(118, 23);
+            tbPreco.Size = new Size(134, 27);
             tbPreco.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 58);
+            label1.Location = new Point(39, 77);
             label1.Name = "label1";
-            label1.Size = new Size(40, 15);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 4;
             label1.Text = "Nome";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(34, 111);
+            label3.Location = new Point(39, 148);
             label3.Name = "label3";
-            label3.Size = new Size(37, 15);
+            label3.Size = new Size(46, 20);
             label3.TabIndex = 6;
             label3.Text = "Preço";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(24, 216);
+            label4.Location = new Point(27, 288);
             label4.Name = "label4";
-            label4.Size = new Size(58, 15);
+            label4.Size = new Size(74, 20);
             label4.TabIndex = 7;
             label4.Text = "Categoria";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(24, 166);
+            label5.Location = new Point(27, 221);
             label5.Name = "label5";
-            label5.Size = new Size(69, 15);
+            label5.Size = new Size(87, 20);
             label5.TabIndex = 8;
             label5.Text = "Quantidade";
             // 
             // tabPage2
             // 
-            tabPage2.Location = new Point(4, 24);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Margin = new Padding(3, 4, 3, 4);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(579, 303);
+            tabPage2.Padding = new Padding(3, 4, 3, 4);
+            tabPage2.Size = new Size(718, 388);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pedidos";
             tabPage2.UseVisualStyleBackColor = true;
@@ -136,10 +141,11 @@
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(btCadastrar);
             tabPage1.Controls.Add(label1);
-            tabPage1.Location = new Point(4, 24);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Margin = new Padding(3, 4, 3, 4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(627, 303);
+            tabPage1.Padding = new Padding(3, 4, 3, 4);
+            tabPage1.Size = new Size(718, 388);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Produtos";
             tabPage1.UseVisualStyleBackColor = true;
@@ -148,34 +154,38 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(232, 10);
+            label2.Location = new Point(265, 13);
             label2.Name = "label2";
-            label2.Size = new Size(123, 15);
+            label2.Size = new Size(154, 20);
             label2.TabIndex = 16;
             label2.Text = "Produtos Cadastrados";
             // 
             // dgLista
             // 
             dgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgLista.Location = new Point(232, 28);
+            dgLista.Location = new Point(265, 37);
+            dgLista.Margin = new Padding(3, 4, 3, 4);
             dgLista.Name = "dgLista";
-            dgLista.Size = new Size(376, 247);
+            dgLista.RowHeadersWidth = 51;
+            dgLista.Size = new Size(430, 329);
             dgLista.TabIndex = 15;
             // 
             // btLimpar
             // 
-            btLimpar.Location = new Point(142, 252);
+            btLimpar.Location = new Point(162, 336);
+            btLimpar.Margin = new Padding(3, 4, 3, 4);
             btLimpar.Name = "btLimpar";
-            btLimpar.Size = new Size(75, 23);
+            btLimpar.Size = new Size(86, 31);
             btLimpar.TabIndex = 14;
             btLimpar.Text = "Limpar";
             btLimpar.UseVisualStyleBackColor = true;
             // 
             // btCadastrar
             // 
-            btCadastrar.Location = new Point(44, 252);
+            btCadastrar.Location = new Point(50, 336);
+            btCadastrar.Margin = new Padding(3, 4, 3, 4);
             btCadastrar.Name = "btCadastrar";
-            btCadastrar.Size = new Size(75, 23);
+            btCadastrar.Size = new Size(86, 31);
             btCadastrar.TabIndex = 13;
             btCadastrar.Text = "Cadastar";
             btCadastrar.UseVisualStyleBackColor = true;
@@ -185,18 +195,20 @@
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(54, 12);
+            tabControl1.Location = new Point(62, 36);
+            tabControl1.Margin = new Padding(3, 4, 3, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(635, 331);
+            tabControl1.Size = new Size(726, 421);
             tabControl1.TabIndex = 13;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1127, 450);
+            ClientSize = new Size(1288, 600);
             Controls.Add(tabControl1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
