@@ -39,10 +39,12 @@
             lbPreco = new Label();
             lbQuantidade = new Label();
             lbCategoria = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btCadastrar = new Button();
+            btLimpar = new Button();
+            dataGridView1 = new DataGridView();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -57,8 +59,9 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(button2);
-            tabPage1.Controls.Add(button1);
+            tabPage1.Controls.Add(dataGridView1);
+            tabPage1.Controls.Add(btLimpar);
+            tabPage1.Controls.Add(btCadastrar);
             tabPage1.Controls.Add(lbCategoria);
             tabPage1.Controls.Add(lbQuantidade);
             tabPage1.Controls.Add(lbPreco);
@@ -149,23 +152,31 @@
             lbCategoria.TabIndex = 7;
             lbCategoria.Text = "Categoria";
             // 
-            // button1
+            // btCadastrar
             // 
-            button1.Location = new Point(392, 226);
-            button1.Name = "button1";
-            button1.Size = new Size(124, 23);
-            button1.TabIndex = 8;
-            button1.Text = "Cadastrar Produto";
-            button1.UseVisualStyleBackColor = true;
+            btCadastrar.Location = new Point(392, 260);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(124, 23);
+            btCadastrar.TabIndex = 8;
+            btCadastrar.Text = "Cadastrar Produto";
+            btCadastrar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btLimpar
             // 
-            button2.Location = new Point(537, 226);
-            button2.Name = "button2";
-            button2.Size = new Size(124, 23);
-            button2.TabIndex = 9;
-            button2.Text = "Limpar";
-            button2.UseVisualStyleBackColor = true;
+            btLimpar.Location = new Point(537, 260);
+            btLimpar.Name = "btLimpar";
+            btLimpar.Size = new Size(124, 23);
+            btLimpar.TabIndex = 9;
+            btLimpar.Text = "Limpar";
+            btLimpar.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(392, 14);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(269, 221);
+            dataGridView1.TabIndex = 10;
             // 
             // Form1
             // 
@@ -178,6 +189,7 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -194,7 +206,8 @@
         private TextBox tbQuantidade;
         private TextBox tbCategoria;
         private TextBox tbNome;
-        private Button button2;
-        private Button button1;
+        private Button btLimpar;
+        private Button btCadastrar;
+        private DataGridView dataGridView1;
     }
 }
