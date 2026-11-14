@@ -41,10 +41,10 @@
             lbCategoria = new Label();
             btCadastrar = new Button();
             btLimpar = new Button();
-            dataGridView1 = new DataGridView();
+            dgProdutos = new DataGridView();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgProdutos).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -59,7 +59,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(dataGridView1);
+            tabPage1.Controls.Add(dgProdutos);
             tabPage1.Controls.Add(btLimpar);
             tabPage1.Controls.Add(btCadastrar);
             tabPage1.Controls.Add(lbCategoria);
@@ -170,13 +170,13 @@
             btLimpar.Text = "Limpar";
             btLimpar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgProdutos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(392, 14);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(269, 221);
-            dataGridView1.TabIndex = 10;
+            dgProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgProdutos.Location = new Point(392, 14);
+            dgProdutos.Name = "dgProdutos";
+            dgProdutos.Size = new Size(269, 221);
+            dgProdutos.TabIndex = 10;
             // 
             // Form1
             // 
@@ -189,7 +189,7 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgProdutos).EndInit();
             ResumeLayout(false);
         }
 
@@ -208,6 +208,6 @@
         private TextBox tbNome;
         private Button btLimpar;
         private Button btCadastrar;
-        private DataGridView dataGridView1;
+        private DataGridView dgProdutos;
     }
 }
