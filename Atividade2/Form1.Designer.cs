@@ -30,7 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            dgProdutos = new DataGridView();
+            dgLista = new DataGridView();
             btLimpar = new Button();
             btCadastrar = new Button();
             lbCategoria = new Label();
@@ -42,28 +42,28 @@
             tbCategoria = new TextBox();
             tbNome = new TextBox();
             tabPage2 = new TabPage();
+            dataGridView2 = new DataGridView();
+            label8 = new Label();
+            label7 = new Label();
+            button2 = new Button();
+            button1 = new Button();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            textBox5 = new TextBox();
+            textBox4 = new TextBox();
+            textBox1 = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             comboBox1 = new ComboBox();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            label7 = new Label();
-            label8 = new Label();
-            dataGridView2 = new DataGridView();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgProdutos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgLista).BeginInit();
             tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -78,7 +78,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(dgProdutos);
+            tabPage1.Controls.Add(dgLista);
             tabPage1.Controls.Add(btLimpar);
             tabPage1.Controls.Add(btCadastrar);
             tabPage1.Controls.Add(lbCategoria);
@@ -92,18 +92,19 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(667, 303);
+            tabPage1.Size = new Size(690, 326);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Produtos";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dgProdutos
+            // dgLista
             // 
-            dgProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgProdutos.Location = new Point(392, 14);
-            dgProdutos.Name = "dgProdutos";
-            dgProdutos.Size = new Size(269, 240);
-            dgProdutos.TabIndex = 10;
+            dgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgLista.GridColor = Color.Aquamarine;
+            dgLista.Location = new Point(392, 14);
+            dgLista.Name = "dgLista";
+            dgLista.Size = new Size(269, 240);
+            dgLista.TabIndex = 10;
             // 
             // btLimpar
             // 
@@ -113,6 +114,7 @@
             btLimpar.TabIndex = 9;
             btLimpar.Text = "Limpar";
             btLimpar.UseVisualStyleBackColor = true;
+            btLimpar.Click += btLimpar_Click;
             // 
             // btCadastrar
             // 
@@ -214,6 +216,126 @@
             tabPage2.Text = "Pedidos";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(6, 258);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(419, 45);
+            dataGridView2.TabIndex = 17;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(6, 231);
+            label8.Name = "label8";
+            label8.Size = new Size(116, 15);
+            label8.TabIndex = 16;
+            label8.Text = "Histórico de pedidos";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(6, 3);
+            label7.Name = "label7";
+            label7.Size = new Size(76, 15);
+            label7.TabIndex = 15;
+            label7.Text = "Novo pedido";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(327, 186);
+            button2.Name = "button2";
+            button2.Size = new Size(98, 23);
+            button2.TabIndex = 14;
+            button2.Text = "Limpar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(187, 186);
+            button1.Name = "button1";
+            button1.Size = new Size(134, 23);
+            button1.TabIndex = 13;
+            button1.Text = "Finalizar pedido";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(15, 190);
+            label6.Name = "label6";
+            label6.Size = new Size(88, 15);
+            label6.TabIndex = 12;
+            label6.Text = "Total: R$ 355,00";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(387, 67);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 15);
+            label5.TabIndex = 11;
+            label5.Text = "Estoque: 10";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(283, 67);
+            label4.Name = "label4";
+            label4.Size = new Size(86, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Preço: R$ 80,00";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(264, 99);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(138, 23);
+            textBox5.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(93, 31);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(272, 23);
+            textBox4.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(93, 99);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(138, 23);
+            textBox1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(15, 102);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Quantidade:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Produto:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(15, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Cliente:";
+            // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
@@ -230,126 +352,6 @@
             dataGridView1.Size = new Size(419, 45);
             dataGridView1.TabIndex = 0;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(15, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Cliente:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(15, 67);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Produto:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(15, 102);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Quantidade:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(93, 99);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(138, 23);
-            textBox1.TabIndex = 5;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(93, 31);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(272, 23);
-            textBox4.TabIndex = 8;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(264, 99);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(138, 23);
-            textBox5.TabIndex = 9;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(283, 67);
-            label4.Name = "label4";
-            label4.Size = new Size(86, 15);
-            label4.TabIndex = 10;
-            label4.Text = "Preço: R$ 80,00";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(387, 67);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 15);
-            label5.TabIndex = 11;
-            label5.Text = "Estoque: 10";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(15, 190);
-            label6.Name = "label6";
-            label6.Size = new Size(88, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Total: R$ 355,00";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(187, 186);
-            button1.Name = "button1";
-            button1.Size = new Size(134, 23);
-            button1.TabIndex = 13;
-            button1.Text = "Finalizar pedido";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(327, 186);
-            button2.Name = "button2";
-            button2.Size = new Size(98, 23);
-            button2.TabIndex = 14;
-            button2.Text = "Limpar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(6, 3);
-            label7.Name = "label7";
-            label7.Size = new Size(76, 15);
-            label7.TabIndex = 15;
-            label7.Text = "Novo pedido";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 231);
-            label8.Name = "label8";
-            label8.Size = new Size(116, 15);
-            label8.TabIndex = 16;
-            label8.Text = "Histórico de pedidos";
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(6, 258);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(419, 45);
-            dataGridView2.TabIndex = 17;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -361,11 +363,11 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgProdutos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgLista).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -384,7 +386,7 @@
         private TextBox tbNome;
         private Button btLimpar;
         private Button btCadastrar;
-        private DataGridView dgProdutos;
+        private DataGridView dgLista;
         private DataGridView dataGridView1;
         private ComboBox comboBox1;
         private Label label3;

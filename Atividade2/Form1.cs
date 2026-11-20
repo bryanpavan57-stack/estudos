@@ -1,3 +1,5 @@
+using System.Drawing.Text;
+
 namespace Atividade2
 {
     public partial class Form1 : Form
@@ -10,7 +12,7 @@ namespace Atividade2
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            decimal preco;
+            decimal Preco;
             int quantidade;
 
             if (tbNome.Text.Trim() == "")
@@ -19,7 +21,7 @@ namespace Atividade2
                 return;
             }
 
-            if (decimal.TryParse(tbNome.Text, out preco) == false || preco <= 0)
+            if (decimal.TryParse(tbPreco.Text, out Preco) == false || Preco <= 0)
             {
                 MessageBox.Show("O preço deve ser maior do que zero.");
                 return;
@@ -39,17 +41,32 @@ namespace Atividade2
             Produto p = new Produto();
 
             p.Nome = tbNome.Text.Trim();
-            p.preco = preco;
+            p.preco = Preco;
             p.Estoque = quantidade;
             p.Categoria = tbCategoria.Text.Trim();
 
             produtos.Add(p);
-
+            AtualizarGrid();
         }
+
+        private void AtualizarGrid()
+        {
+            dgLista.DataSource = null;
+            dgLista.DataSource = produtos;
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            tbNome.Clear();
+            tbCategoria.Clear();
+            tbPreco.Clear();
+            tbQuantidade.Clear();
         }
     }
 }
