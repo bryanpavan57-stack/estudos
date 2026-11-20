@@ -18,7 +18,7 @@ namespace Atividade2
                 MessageBox.Show("Informa o nome do produto.");
                 return;
             }
-            
+
             if (decimal.TryParse(tbNome.Text, out preco) == false || preco <= 0)
             {
                 MessageBox.Show("O preço deve ser maior do que zero.");
@@ -29,13 +29,13 @@ namespace Atividade2
             {
                 MessageBox.Show("Aquantidade deve ser um numero inteiro maior ou igual a zero.");
                 return;
-            }  
-        
+            }
+
             if (tbCategoria.Text.Trim() == "")
             {
                 MessageBox.Show("Informe a categoria");
                 return;
-            }    
+            }
             Produto p = new Produto();
 
             p.Nome = tbNome.Text.Trim();
@@ -47,5 +47,9 @@ namespace Atividade2
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
