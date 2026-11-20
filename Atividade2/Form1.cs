@@ -5,6 +5,7 @@ namespace Atividade2
     public partial class Form1 : Form
     {
         List<Produto> produtos = new List<Produto>();
+        List<Pedidos> pedidos = new List<Pedidos>();
         public Form1()
         {
             InitializeComponent();
@@ -70,6 +71,11 @@ namespace Atividade2
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btAdicionar_Click(object sender, EventArgs e)
         {
 
         }

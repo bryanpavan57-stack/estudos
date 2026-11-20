@@ -50,7 +50,6 @@
             lblTotal = new Label();
             lblEstoque = new Label();
             lblPreco = new Label();
-            textBox5 = new TextBox();
             tbCliente = new TextBox();
             tbQuant = new TextBox();
             label3 = new Label();
@@ -58,6 +57,7 @@
             label1 = new Label();
             cbProdutos = new ComboBox();
             dgItens = new DataGridView();
+            btAdicionar = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgLista).BeginInit();
@@ -192,6 +192,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(btAdicionar);
             tabPage2.Controls.Add(dgPedidos);
             tabPage2.Controls.Add(label8);
             tabPage2.Controls.Add(label7);
@@ -200,7 +201,6 @@
             tabPage2.Controls.Add(lblTotal);
             tabPage2.Controls.Add(lblEstoque);
             tabPage2.Controls.Add(lblPreco);
-            tabPage2.Controls.Add(textBox5);
             tabPage2.Controls.Add(tbCliente);
             tabPage2.Controls.Add(tbQuant);
             tabPage2.Controls.Add(label3);
@@ -289,13 +289,6 @@
             lblPreco.TabIndex = 10;
             lblPreco.Text = "Preço:";
             // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(283, 99);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(171, 23);
-            textBox5.TabIndex = 9;
-            // 
             // tbCliente
             // 
             tbCliente.Location = new Point(93, 31);
@@ -353,6 +346,16 @@
             dgItens.Size = new Size(448, 45);
             dgItens.TabIndex = 0;
             // 
+            // btAdicionar
+            // 
+            btAdicionar.Location = new Point(283, 99);
+            btAdicionar.Name = "btAdicionar";
+            btAdicionar.Size = new Size(171, 21);
+            btAdicionar.TabIndex = 18;
+            btAdicionar.Text = "Adicionar";
+            btAdicionar.UseVisualStyleBackColor = true;
+            btAdicionar.Click += btAdicionar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -395,7 +398,6 @@
         private Label label1;
         private Label lblEstoque;
         private Label lblPreco;
-        private TextBox textBox5;
         private TextBox tbCliente;
         private TextBox tbQuant;
         private Label lblTotal;
@@ -404,5 +406,6 @@
         private Label label8;
         private Label label7;
         private DataGridView dgPedidos;
+        private Button btAdicionar;
     }
 }
