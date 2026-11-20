@@ -42,9 +42,16 @@
             tbCategoria = new TextBox();
             tbNome = new TextBox();
             tabPage2 = new TabPage();
+            comboBox1 = new ComboBox();
+            dataGridView1 = new DataGridView();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgProdutos).BeginInit();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -171,6 +178,11 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(label1);
+            tabPage2.Controls.Add(comboBox1);
+            tabPage2.Controls.Add(dataGridView1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -178,6 +190,49 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pedidos";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(84, 64);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(147, 23);
+            comboBox1.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(6, 130);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(419, 45);
+            dataGridView1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(15, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Cliente:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 3;
+            label2.Text = "label2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(15, 102);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 4;
+            label3.Text = "label3";
             // 
             // Form1
             // 
@@ -191,6 +246,9 @@
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgProdutos).EndInit();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -210,5 +268,10 @@
         private Button btLimpar;
         private Button btCadastrar;
         private DataGridView dgProdutos;
+        private DataGridView dataGridView1;
+        private ComboBox comboBox1;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }

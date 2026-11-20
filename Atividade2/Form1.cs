@@ -43,6 +43,8 @@ namespace Atividade2
             p.Estoque = quantidade;
             p.Categoria = tbCategoria.Text.Trim();
 
+            produtos.Add(p);
+
         }
 
     }
