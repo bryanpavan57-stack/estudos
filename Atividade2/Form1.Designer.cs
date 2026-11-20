@@ -42,28 +42,28 @@
             tbCategoria = new TextBox();
             tbNome = new TextBox();
             tabPage2 = new TabPage();
-            dataGridView2 = new DataGridView();
+            dgPedidos = new DataGridView();
             label8 = new Label();
             label7 = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
+            btLimparPedido = new Button();
+            btFinalizar = new Button();
+            lblTotal = new Label();
+            lblEstoque = new Label();
+            lblPreco = new Label();
             textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox1 = new TextBox();
+            tbCliente = new TextBox();
+            tbQuant = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            comboBox1 = new ComboBox();
-            dataGridView1 = new DataGridView();
+            cbProdutos = new ComboBox();
+            dgItens = new DataGridView();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgLista).BeginInit();
             tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgPedidos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgItens).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -192,22 +192,22 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(dataGridView2);
+            tabPage2.Controls.Add(dgPedidos);
             tabPage2.Controls.Add(label8);
             tabPage2.Controls.Add(label7);
-            tabPage2.Controls.Add(button2);
-            tabPage2.Controls.Add(button1);
-            tabPage2.Controls.Add(label6);
-            tabPage2.Controls.Add(label5);
-            tabPage2.Controls.Add(label4);
+            tabPage2.Controls.Add(btLimparPedido);
+            tabPage2.Controls.Add(btFinalizar);
+            tabPage2.Controls.Add(lblTotal);
+            tabPage2.Controls.Add(lblEstoque);
+            tabPage2.Controls.Add(lblPreco);
             tabPage2.Controls.Add(textBox5);
-            tabPage2.Controls.Add(textBox4);
-            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(tbCliente);
+            tabPage2.Controls.Add(tbQuant);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(label2);
             tabPage2.Controls.Add(label1);
-            tabPage2.Controls.Add(comboBox1);
-            tabPage2.Controls.Add(dataGridView1);
+            tabPage2.Controls.Add(cbProdutos);
+            tabPage2.Controls.Add(dgItens);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
@@ -216,13 +216,13 @@
             tabPage2.Text = "Pedidos";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgPedidos
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(6, 258);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(419, 45);
-            dataGridView2.TabIndex = 17;
+            dgPedidos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgPedidos.Location = new Point(6, 258);
+            dgPedidos.Name = "dgPedidos";
+            dgPedidos.Size = new Size(448, 45);
+            dgPedidos.TabIndex = 17;
             // 
             // label8
             // 
@@ -242,72 +242,73 @@
             label7.TabIndex = 15;
             label7.Text = "Novo pedido";
             // 
-            // button2
+            // btLimparPedido
             // 
-            button2.Location = new Point(327, 186);
-            button2.Name = "button2";
-            button2.Size = new Size(98, 23);
-            button2.TabIndex = 14;
-            button2.Text = "Limpar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btLimparPedido.Location = new Point(356, 186);
+            btLimparPedido.Name = "btLimparPedido";
+            btLimparPedido.Size = new Size(98, 23);
+            btLimparPedido.TabIndex = 14;
+            btLimparPedido.Text = "Limpar";
+            btLimparPedido.UseVisualStyleBackColor = true;
+            btLimparPedido.Click += button2_Click;
             // 
-            // button1
+            // btFinalizar
             // 
-            button1.Location = new Point(187, 186);
-            button1.Name = "button1";
-            button1.Size = new Size(134, 23);
-            button1.TabIndex = 13;
-            button1.Text = "Finalizar pedido";
-            button1.UseVisualStyleBackColor = true;
+            btFinalizar.Location = new Point(202, 186);
+            btFinalizar.Name = "btFinalizar";
+            btFinalizar.Size = new Size(134, 23);
+            btFinalizar.TabIndex = 13;
+            btFinalizar.Text = "Finalizar pedido";
+            btFinalizar.UseVisualStyleBackColor = true;
+            btFinalizar.Click += button1_Click;
             // 
-            // label6
+            // lblTotal
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(15, 190);
-            label6.Name = "label6";
-            label6.Size = new Size(88, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Total: R$ 355,00";
+            lblTotal.AutoSize = true;
+            lblTotal.Location = new Point(15, 190);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(36, 15);
+            lblTotal.TabIndex = 12;
+            lblTotal.Text = "Total:";
             // 
-            // label5
+            // lblEstoque
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(387, 67);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 15);
-            label5.TabIndex = 11;
-            label5.Text = "Estoque: 10";
+            lblEstoque.AutoSize = true;
+            lblEstoque.Location = new Point(387, 67);
+            lblEstoque.Name = "lblEstoque";
+            lblEstoque.Size = new Size(52, 15);
+            lblEstoque.TabIndex = 11;
+            lblEstoque.Text = "Estoque:";
             // 
-            // label4
+            // lblPreco
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(283, 67);
-            label4.Name = "label4";
-            label4.Size = new Size(86, 15);
-            label4.TabIndex = 10;
-            label4.Text = "Preço: R$ 80,00";
+            lblPreco.AutoSize = true;
+            lblPreco.Location = new Point(283, 67);
+            lblPreco.Name = "lblPreco";
+            lblPreco.Size = new Size(40, 15);
+            lblPreco.TabIndex = 10;
+            lblPreco.Text = "Preço:";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(264, 99);
+            textBox5.Location = new Point(283, 99);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(138, 23);
+            textBox5.Size = new Size(171, 23);
             textBox5.TabIndex = 9;
             // 
-            // textBox4
+            // tbCliente
             // 
-            textBox4.Location = new Point(93, 31);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(272, 23);
-            textBox4.TabIndex = 8;
+            tbCliente.Location = new Point(93, 31);
+            tbCliente.Name = "tbCliente";
+            tbCliente.Size = new Size(361, 23);
+            tbCliente.TabIndex = 8;
             // 
-            // textBox1
+            // tbQuant
             // 
-            textBox1.Location = new Point(93, 99);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(138, 23);
-            textBox1.TabIndex = 5;
+            tbQuant.Location = new Point(93, 99);
+            tbQuant.Name = "tbQuant";
+            tbQuant.Size = new Size(147, 23);
+            tbQuant.TabIndex = 5;
             // 
             // label3
             // 
@@ -336,21 +337,21 @@
             label1.TabIndex = 2;
             label1.Text = "Cliente:";
             // 
-            // comboBox1
+            // cbProdutos
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(93, 64);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(147, 23);
-            comboBox1.TabIndex = 1;
+            cbProdutos.FormattingEnabled = true;
+            cbProdutos.Location = new Point(93, 64);
+            cbProdutos.Name = "cbProdutos";
+            cbProdutos.Size = new Size(147, 23);
+            cbProdutos.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgItens
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 130);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(419, 45);
-            dataGridView1.TabIndex = 0;
+            dgItens.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgItens.Location = new Point(6, 130);
+            dgItens.Name = "dgItens";
+            dgItens.Size = new Size(448, 45);
+            dgItens.TabIndex = 0;
             // 
             // Form1
             // 
@@ -366,8 +367,8 @@
             ((System.ComponentModel.ISupportInitialize)dgLista).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgPedidos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgItens).EndInit();
             ResumeLayout(false);
         }
 
@@ -387,21 +388,21 @@
         private Button btLimpar;
         private Button btCadastrar;
         private DataGridView dgLista;
-        private DataGridView dataGridView1;
-        private ComboBox comboBox1;
+        private DataGridView dgItens;
+        private ComboBox cbProdutos;
         private Label label3;
         private Label label2;
         private Label label1;
-        private Label label5;
-        private Label label4;
+        private Label lblEstoque;
+        private Label lblPreco;
         private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox1;
-        private Label label6;
-        private Button button2;
-        private Button button1;
+        private TextBox tbCliente;
+        private TextBox tbQuant;
+        private Label lblTotal;
+        private Button btLimparPedido;
+        private Button btFinalizar;
         private Label label8;
         private Label label7;
-        private DataGridView dataGridView2;
+        private DataGridView dgPedidos;
     }
 }
